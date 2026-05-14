@@ -10,6 +10,10 @@ package com.rfid.employeeattendance.gui;
  */
 public class DataAbsensiPage extends javax.swing.JFrame {
 
+    public static void showData(String string) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
     /**
      * Creates new form DataAbsensiPage
      */
@@ -26,21 +30,395 @@ public class DataAbsensiPage extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel8 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        lblUid = new javax.swing.JLabel();
+        txtTanggal = new javax.swing.JTextField();
+        txtJamMasuk = new javax.swing.JTextField();
+        txtJamKeluar = new javax.swing.JTextField();
+        txtStatus = new javax.swing.JTextField();
+        lblNama = new javax.swing.JLabel();
+        lblTanggal = new javax.swing.JLabel();
+        lblWaktuMasuk = new javax.swing.JLabel();
+        lblWaktuKeluar = new javax.swing.JLabel();
+        lblStatus = new javax.swing.JLabel();
+        btnSave = new javax.swing.JButton();
+        btnUpdate = new javax.swing.JButton();
+        txtUid = new javax.swing.JTextField();
+        txtNama = new javax.swing.JTextField();
+        jPanel7 = new javax.swing.JPanel();
+        jPanel9 = new javax.swing.JPanel();
+        txtCari = new javax.swing.JTextField();
+        btnRefresh = new javax.swing.JButton();
+        jPanel10 = new javax.swing.JPanel();
+        jPanel6 = new javax.swing.JPanel();
+        dashboardPage = new javax.swing.JLabel();
+        dataKaryawanPage = new javax.swing.JLabel();
+        dataAbsensiPage = new javax.swing.JLabel();
+        profilePage = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jPanel8.setBackground(new java.awt.Color(176, 166, 149));
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("Data Absensi");
+
+        lblUid.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        lblUid.setForeground(new java.awt.Color(255, 255, 255));
+        lblUid.setText("UID RFID");
+
+        lblNama.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        lblNama.setForeground(new java.awt.Color(255, 255, 255));
+        lblNama.setText("Nama Karyawan");
+
+        lblTanggal.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        lblTanggal.setForeground(new java.awt.Color(255, 255, 255));
+        lblTanggal.setText("Tanggal");
+
+        lblWaktuMasuk.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        lblWaktuMasuk.setForeground(new java.awt.Color(255, 255, 255));
+        lblWaktuMasuk.setText("Jam Masuk");
+
+        lblWaktuKeluar.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        lblWaktuKeluar.setForeground(new java.awt.Color(255, 255, 255));
+        lblWaktuKeluar.setText("Jam Keluar");
+
+        lblStatus.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        lblStatus.setForeground(new java.awt.Color(255, 255, 255));
+        lblStatus.setText("Status");
+
+        btnSave.setBackground(new java.awt.Color(65, 67, 27));
+        btnSave.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnSave.setForeground(new java.awt.Color(255, 255, 255));
+        btnSave.setText("Save");
+        btnSave.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSaveActionPerformed(evt);
+            }
+        });
+
+        btnUpdate.setBackground(new java.awt.Color(248, 243, 225));
+        btnUpdate.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnUpdate.setText("Update");
+        btnUpdate.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnUpdateActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
+        jPanel8.setLayout(jPanel8Layout);
+        jPanel8Layout.setHorizontalGroup(
+            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel8Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addComponent(jLabel1)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblUid)
+                            .addComponent(lblNama)
+                            .addComponent(lblTanggal)
+                            .addComponent(lblWaktuMasuk)
+                            .addComponent(lblWaktuKeluar)
+                            .addComponent(lblStatus))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel8Layout.createSequentialGroup()
+                                .addComponent(btnSave)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 52, Short.MAX_VALUE)
+                                .addComponent(btnUpdate))
+                            .addComponent(txtStatus, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(txtJamKeluar, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(txtJamMasuk, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(txtTanggal, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(txtUid)
+                            .addComponent(txtNama))))
+                .addContainerGap())
+        );
+        jPanel8Layout.setVerticalGroup(
+            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel8Layout.createSequentialGroup()
+                .addGap(16, 16, 16)
+                .addComponent(jLabel1)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblUid)
+                    .addComponent(txtUid, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblNama)
+                    .addComponent(txtNama, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtTanggal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblTanggal))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtJamMasuk, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblWaktuMasuk))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtJamKeluar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblWaktuKeluar))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtStatus, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblStatus))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnSave)
+                    .addComponent(btnUpdate))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jPanel7.setBackground(new java.awt.Color(119, 107, 93));
+        jPanel7.setPreferredSize(new java.awt.Dimension(764, 80));
+
+        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
+        jPanel7.setLayout(jPanel7Layout);
+        jPanel7Layout.setHorizontalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 778, Short.MAX_VALUE)
+        );
+        jPanel7Layout.setVerticalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 85, Short.MAX_VALUE)
+        );
+
+        jPanel9.setBackground(new java.awt.Color(235, 227, 213));
+
+        txtCari.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                txtCariKeyReleased(evt);
+            }
+        });
+
+        btnRefresh.setBackground(new java.awt.Color(65, 67, 27));
+        btnRefresh.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnRefresh.setForeground(new java.awt.Color(255, 255, 255));
+        btnRefresh.setText("Refresh");
+        btnRefresh.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRefreshActionPerformed(evt);
+            }
+        });
+
+        jPanel10.setBackground(new java.awt.Color(235, 227, 213));
+
+        javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
+        jPanel10.setLayout(jPanel10Layout);
+        jPanel10Layout.setHorizontalGroup(
+            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+        jPanel10Layout.setVerticalGroup(
+            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
+        jPanel9.setLayout(jPanel9Layout);
+        jPanel9Layout.setHorizontalGroup(
+            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel9Layout.createSequentialGroup()
+                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel9Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(txtCari, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnRefresh))
+                    .addComponent(jPanel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+        jPanel9Layout.setVerticalGroup(
+            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel9Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(btnRefresh, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(txtCari))
+                .addGap(16, 16, 16)
+                .addComponent(jPanel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jPanel6.setBackground(new java.awt.Color(119, 107, 93));
+        jPanel6.setPreferredSize(new java.awt.Dimension(150, 465));
+
+        dashboardPage.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        dashboardPage.setForeground(new java.awt.Color(255, 255, 255));
+        dashboardPage.setText("Dashboard");
+        dashboardPage.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                dashboardPageMouseClicked(evt);
+            }
+        });
+
+        dataKaryawanPage.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        dataKaryawanPage.setForeground(new java.awt.Color(255, 255, 255));
+        dataKaryawanPage.setText("Data Karyawan");
+        dataKaryawanPage.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                dataKaryawanPageMouseClicked(evt);
+            }
+        });
+
+        dataAbsensiPage.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        dataAbsensiPage.setForeground(new java.awt.Color(255, 255, 255));
+        dataAbsensiPage.setText("Data Absensi");
+        dataAbsensiPage.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                dataAbsensiPageMouseClicked(evt);
+            }
+        });
+
+        profilePage.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        profilePage.setForeground(new java.awt.Color(255, 255, 255));
+        profilePage.setText("Profile");
+
+        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
+        jPanel6.setLayout(jPanel6Layout);
+        jPanel6Layout.setHorizontalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(dataKaryawanPage, javax.swing.GroupLayout.DEFAULT_SIZE, 138, Short.MAX_VALUE)
+                    .addComponent(dashboardPage, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(dataAbsensiPage, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(profilePage, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+        jPanel6Layout.setVerticalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGap(27, 27, 27)
+                .addComponent(dashboardPage)
+                .addGap(35, 35, 35)
+                .addComponent(dataKaryawanPage)
+                .addGap(35, 35, 35)
+                .addComponent(dataAbsensiPage)
+                .addGap(35, 35, 35)
+                .addComponent(profilePage)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+            .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, 778, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, 347, Short.MAX_VALUE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(13, 13, 13)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, Short.MAX_VALUE)))
+                        .addContainerGap())))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveActionPerformed
+        // TODO add your handling code here:
+        LogAbsensi A = new LogAbsensi();
+        A.setUidRfid(txtUid.getText());
+        A.setNama(txtNama.getText());
+
+        A.setWaktuMasuk(
+            LocalDateTime.of(
+                java.time.LocalDate.parse(txtTanggal.getText()),
+                java.time.LocalTime.parse(txtJamMasuk.getText())
+            )
+        );
+
+        A.setWaktuKeluar(
+            LocalDateTime.of(
+                java.time.LocalDate.parse(txtTanggal.getText()),
+                java.time.LocalTime.parse(txtJamKeluar.getText())
+            )
+        );
+
+        A.setStatus(txtStatus.getText());
+        AbsensiService service = new AbsensiService();
+        service.tambahAbsensi(A);
+        showData("");
+    }//GEN-LAST:event_btnSaveActionPerformed
+
+    private void btnUpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUpdateActionPerformed
+        // TODO add your handling code here:
+        LogAbsensi A = new LogAbsensi();
+        A.setIdLog(selectedId);
+        A.setUidRfid(txtUid.getText());
+        A.setNama(txtNama.getText());
+
+        A.setWaktuMasuk(
+            LocalDateTime.of(
+                java.time.LocalDate.parse(txtTanggal.getText()),
+                java.time.LocalTime.parse(txtJamMasuk.getText())
+            )
+        );
+
+        A.setWaktuKeluar(
+            LocalDateTime.of(
+                java.time.LocalDate.parse(txtTanggal.getText()),
+                java.time.LocalTime.parse(txtJamKeluar.getText())
+            )
+        );
+
+        A.setStatus(txtStatus.getText());
+        AbsensiService service = new AbsensiService();
+        service.tambahAbsensi(A);
+        refreshAll();
+    }//GEN-LAST:event_btnUpdateActionPerformed
+
+    private void txtCariKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCariKeyReleased
+        // TODO add your handling code here:
+        showData(txtCari.getText());
+    }//GEN-LAST:event_txtCariKeyReleased
+
+    private void btnRefreshActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRefreshActionPerformed
+        // TODO add your handling code here:
+        refreshAll();
+    }//GEN-LAST:event_btnRefreshActionPerformed
+
+    private void dashboardPageMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dashboardPageMouseClicked
+        // TODO add your handling code here:
+        new DashboardPage().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_dashboardPageMouseClicked
+
+    private void dataKaryawanPageMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dataKaryawanPageMouseClicked
+        // TODO add your handling code here:
+        new DataKaryawanPage().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_dataKaryawanPageMouseClicked
+
+    private void dataAbsensiPageMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dataAbsensiPageMouseClicked
+        // TODO add your handling code here:
+        new DataAbsensiPage().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_dataAbsensiPageMouseClicked
 
     /**
      * @param args the command line arguments
@@ -70,13 +448,43 @@ public class DataAbsensiPage extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new DataAbsensiPage().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new DataAbsensiPage().setVisible(true);
         });
     }
 
+    public static class btnUpdate {
+
+        public btnUpdate() {
+        }
+    }
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnRefresh;
+    public static javax.swing.JButton btnSave;
+    public static javax.swing.JButton btnUpdate;
+    private javax.swing.JLabel dashboardPage;
+    private javax.swing.JLabel dataAbsensiPage;
+    private javax.swing.JLabel dataKaryawanPage;
+    private javax.swing.JLabel jLabel1;
+    public static javax.swing.JPanel jPanel10;
+    private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel7;
+    private javax.swing.JPanel jPanel8;
+    public static javax.swing.JPanel jPanel9;
+    private javax.swing.JLabel lblNama;
+    private javax.swing.JLabel lblStatus;
+    private javax.swing.JLabel lblTanggal;
+    private javax.swing.JLabel lblUid;
+    private javax.swing.JLabel lblWaktuKeluar;
+    private javax.swing.JLabel lblWaktuMasuk;
+    private javax.swing.JLabel profilePage;
+    private javax.swing.JTextField txtCari;
+    public static javax.swing.JTextField txtJamKeluar;
+    public static javax.swing.JTextField txtJamMasuk;
+    public static javax.swing.JTextField txtNama;
+    public static javax.swing.JTextField txtStatus;
+    public static javax.swing.JTextField txtTanggal;
+    public static javax.swing.JTextField txtUid;
     // End of variables declaration//GEN-END:variables
 }
